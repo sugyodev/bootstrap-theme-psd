@@ -16,18 +16,21 @@
 <body>
 	<!-- / Navbar -->
 	<header role="banner">
-		<nav class="navbar navbar-expand-lg">
-			<div class="container d-block position-relative">
+		<nav class="navbar navbar-expand-lg row mx-0">
+			<div class="container-fluid d-block position-relative mx-0 w-100">
 				<button class="navbar-toggler" type="button" onclick="navbarToggle(event)" data-toggle="collapse"
 					data-target="#top_navbars" aria-controls="top_navbars" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<img src="./imgs/bars.png" width="25" alt="">
 				</button>
-				<div class="d-flex justify-content-center">
-					<img src="./imgs/Logo.png" alt="" width="870" />
+				<div class="d-flex">
+					<div class="col col-logo text-center">
+						<img src="./imgs/Logo.png" alt="" class="logo d-lg-inline-flex d-none img-fluid w-50" />
+						<img src="./imgs/mobile-logo.png" alt="" class="logo d-lg-none d-md-block w-100 img-fluid" />
+					</div>
 				</div>
-				<div class="collapse navbar-collapse" id="top_navbars">
-					<ul class="navbar-nav m-auto">
+				<div class="collapse navbar-collapse  w-100" id="top_navbars">
+					<ul class="navbar-nav m-auto" style="z-index:10">
 						<li class="nav-item">
 							<a class="nav-link active" href="index.html"><span
 									class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>THE
@@ -40,11 +43,26 @@
 							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							</p>
 						</li>
+
 						<li class="nav-item">
 							<a class="nav-link" href="#">9 GENERATIONS</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">NACHHALTIG</a>
+						</li>
+						
+						<li class="nav-item dropdown d-md-block d-lg-none mb-5">
+							<button class="btn btn-primary"
+								style="color:#17365c;background: #fec700 !important;border:none;">
+								GIN BESTELLEN
+							</button>
+						</li>
+
+						<li class="nav-item d-md-block d-lg-none">
+							<a class="nav-link" href="#" style="font-size: 40px !important; line-height: 50px;">KONTAKT</a>
+						</li>
+						<li class="nav-item d-md-block d-lg-none">
+							<a class="nav-link" href="#" style="font-size: 40px !important; line-height: 50px;">IMPRESSUM</a>
 						</li>
 						<!-- <li class="nav-item d-md-none d-block">
 						<a class="nav-link" href="#">KONTKAT</a>
@@ -54,23 +72,19 @@
 					</li> -->
 					</ul>
 					<img src="imgs/navbar-img-1.png" class="position-absolute d-md-block d-lg-none"
-						style="right: 235px;top: 120px;" width="30" />
+						style="right: 0px;top: 120px;" width="150" />
 					<img src="imgs/navbar-img-2.png" class="position-absolute d-md-block d-lg-none"
-						style="left: 225px;top: 330px;" width="30" />
+						style="left: 0px;bottom: 250px;" width="150" />
 					<img src="imgs/navbar-img-3.png" class="position-absolute d-md-block d-lg-none"
-						style="left: 215px;top: 420px;" width="50" />
+						style="left: 0px;bottom: 0px;" width="200" />
 					<img src="imgs/navbar-img-4.png" class="position-absolute d-md-block d-lg-none"
-						style="right: 235px;top: 425px;" width="50" />
+						style="right: 50px;bottom: 0px;" width="200" />
+					<img src="imgs/navbar-img-6.png" class="position-absolute d-md-block d-lg-none"
+						style="right: 0px;bottom: 0px;" width="80" />
 					<img src="imgs/navbar-img-5.png" class="position-absolute d-md-block d-lg-none"
-						style="right: 220px;top: 355px;" width="30" />
+						style="right: 10px;bottom: 260px;" width="150" />
 
 					<div class="language_bar d-block d-lg-flex">
-						<div class="d-flex justify-content-center d-lg-none">
-							<button class="btn btn-primary"
-								style="color:#17365c;background: #fec700 !important;border:none;">
-								gin bestellen
-							</button>
-						</div>
 						<div class="d-flex justify-content-center pt-2 mr-4 mt-sm-0 mt-4">
 							<div class="d-flex flex-nowrap" style="font-size:14px;">
 								<div style="color: #fec700;" role="button">GER</div>
@@ -95,21 +109,23 @@
 	</header>
 
 	<!-- Body -->
-	<div class="container-fluid mt-5">
-		<div class="row">
+	<div class="container-fluid main mt-n5">
+		<div class="row" id="land-bg">
 			<div class="col text-center">
-				<img src="imgs/img-1.png" class="img-fluid w-75" />
+				<img src="imgs/img-1.png" class="img-fluid w-75 d-lg-inline-flex d-md-none" />
+				<img src="imgs/mobile-img-1.png" class="img-fluid w-100 d-lg-none d-md-block" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="offset-lg-3 offset-md-1 col-md-10 col-sm-12 col-lg-6">
-				<div class="row m-4">
+			<div class="offset-lg-3 col-md-12 col-lg-6">
+				<div class="row m-4 pt-4">
 					<div class="col text-center">
-						<img src="imgs/art-img.png" class="img-fluid w-100" />
+						<img src="imgs/art-img.png" class="img-fluid w-100 d-lg-block d-md-none" />
+						<img src="imgs/mobile-art-img.png" class="img-fluid w-100 d-md-flex d-lg-none" />
 					</div>
 				</div>
 				<div class="row m-4">
-					<p class="text-white text-center h5">
+					<p class="text-white text-center h5 art-text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
 						maecenas accumsan lacus vel facilisis.
@@ -118,29 +134,35 @@
 				<div class="row m-4 d-lg-none d-md-block">
 					<div class="col text-center">
 						<img src="imgs/img-14.png" class="img-fluid w-100" />
+						<img src="imgs/mobile-img-2.png" class="img-fluid position-absolute d-md-block d-lg-none"
+							style="right: 0px;top:300px" width="200" />
 					</div>
 				</div>
-				<div class="row m-4">
+				<div class="row my-4">
 					<div class="col-sm-12 col-lg-6">
 						<img src="imgs/img-2.png" class="img-fluid w-100" />
 					</div>
 					<div class="col-sm-12 col-lg-6">
 						<div class="row">
 							<div class="col text-center">
-								<img src="imgs/logo-icon.png" class="img-fluid w-75" />
+								<img src="imgs/logo-icon.png" class="img-fluid w-75 d-lg-inline-flex d-md-none" />
+								<img src="imgs/deick-icon.png" class="img-fluid w-100 d-md-block d-lg-none" />
 							</div>
 						</div>
 						<div class="row text-center d-lg-block d-md-none">
 							<h2 class="text-white text-center w-100">Classic Dry Gin</h2>
-							<p class="text-white text-justify h5" style="font-size: 12px;">Wacholder - Schwarzer Pfeffer -
+							<p class="text-white text-justify h5" style="font-size: 12px;">Wacholder - Schwarzer Pfeffer
+								-
 								Melisse</p>
-							<p class="text-white text-justify h5" style="font-size: 12px;">Das Rezept für diesen herrlich
+							<p class="text-white text-justify h5" style="font-size: 12px;">Das Rezept für diesen
+								herrlich
 								ausbalancierten Dry Gin wurde über Jahrzehnte in der Familien Destillerie verfeinert.
 							</p>
 							<p class="text-white text-justify h5" style="font-size: 12px;"> Die 9 handverlesenen
 								Botanicals, mit einem klaren Fokus auf fruchtigen Wacholder, bilden eine schlüssige
 								Harmonie. </p>
-							<p class="text-white text-justify h5" style="font-size: 12px;">Die feinen Noten von schwarzem
+							<p class="text-white text-justify h5" style="font-size: 12px;">Die feinen Noten von
+								schwarzem
 								Pfeffer, Kardamom und Koriander werden begleitet von Zitronenschale und Melisse.</p>
 							<p class="text-white text-justify h5" style="font-size: 12px;">Für diesen weichen und runden
 								Gin mit 40 Vol. % wird nur der beste Weizen aus dem eigenen landwirtschaftlichen
@@ -149,39 +171,39 @@
 								style="color:#17365c;background: #fec700;border:none;">GIN BESTELLEN</button>
 						</div>
 
-						<div class="row d-lg-none d-md-block position-relative">
+						<div class="row d-lg-none d-md-block position-relative dieck">
 							<img src="imgs/navbar-img-2.png" class="position-absolute d-md-block d-lg-none"
-								style="left: 20px;top: -15px;" width="50" />
+								style="left: 0px;top: -85px;" width="120" />
 
 							<img src="imgs/text-img-1.png" class="position-absolute d-md-block d-lg-none"
-								style="right: 20px;top: 120px;" width="120" />
+								style="right: 20px;top: 120px;" width="180" />
 
 							<img src="imgs/text-img-3.png" class="position-absolute d-md-block d-lg-none"
-								style="left: 5px;top: 200px;" width="70" />
+								style="left: 25px;bottom: 420px;" width="120" />
 
 							<img src="imgs/text-img-2.png" class="position-absolute d-md-block d-lg-none"
-								style="right: 20px;top: 280px;" width="120" />
+								style="right: 20px;bottom: 200px;" width="140" />
 
-							<div style="padding-left:80px">
+							<div style="padding-left:150px">
 								<h5 class="text-white text-left">Unser eigener Weizen</h5>
 								<p class="text-white text-left">Das Rezept für diesen herrlich ausbalancierten Dry Gin
 									wurde über Jahrzehnte in der Familien Destillerie
 									verfeinert. </p>
 							</div>
-							<div style="padding-right:150px">
+							<div style="padding-right:120px;padding-left: 28px;">
 								<h5 class="text-white text-left">Unser eigener Weizen
 								</h5>
 								<p class="text-white text-left">Das Rezept für diesen herrlich
 									ausbalancierten Dry Gin wurde
 									über Jahrzehnte in der Familien
 									Destillerie verfeinert.</p>
-								<p class="text-white text-left" style="padding-left: 90px;">Das Rezept für diesen
+								<p class="text-white text-left" style="padding-left: 140px;">Das Rezept für diesen
 									herrlich
 									Das Rezept für diesen herrlich ausbalancierten Dry Gin wurde
 									über Jahrzehnte in der Familien.
 									Destillerie verfeinert. </p>
 							</div>
-							<div style="padding-right:110px">
+							<div style="padding-right:140px;padding-left: 30px;">
 								<h5 class="text-white text-left">Unser eigener Weizen</h5>
 								<p class="text-white text-left">Das Rezept für diesen herrlich aus-
 									balancierten Dry Gin wurde über
@@ -189,16 +211,21 @@
 									verfeinert. Das Rezept für diesen herrlich ausbalancierten Dry Gin wurde über
 									Jahrzehnte.</p>
 							</div>
+							<div class="px-5">
+								<button class="w-100 p-4 font-weight-bold h5"
+									style="color:#17365c;background: #fec700;border:none;font-size: 50px !important;">GIN
+									BESTELLEN</button>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row m-4">
+				<div class="row my-4">
 					<div class="col position-absolute d-lg-block d-sm-none"
-						style="margin-top: 140px;margin-left: -36px;">
-						<img src="imgs/arrow-left.png" width="20" class="float-left" role="button"
+						style="margin-top: 140px;">
+						<img src="imgs/arrow-left.png" width="20" class="float-left" role="button" style="margin-left: -36px;"
 							onclick="customNavigationLeft()" />
-						<img src="imgs/arrow-right.png" width="20" class="float-right" role="button"
+						<img src="imgs/arrow-right.png" width="20" class="float-right" role="button" style="margin-right: -36px;"
 							onclick="customNavigationRight()" />
 					</div>
 					<div class="col-md-12">
@@ -208,11 +235,19 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider-img-1.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
 										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
 										</h7>
 										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
 											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
@@ -224,11 +259,19 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider-img-2.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
 										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
 										</h7>
 										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
 											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
@@ -240,11 +283,19 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider-img-3.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
 										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
 										</h7>
 										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
 											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
@@ -255,16 +306,16 @@
 					</div>
 				</div>
 
-				<div class="row m-4">
+				<div class="row my-4">
 					<div class="col position-absolute d-lg-block d-md-none"
-						style="margin-top: 120px;margin-left: -36px;">
-						<img src="imgs/arrow-left.png" width="20" class="float-left" role="button"
+						style="margin-top: 120px;">
+						<img src="imgs/arrow-left.png" width="20" class="float-left" role="button" style="margin-left: -36px;"
 							onclick="custom3NavigationLeft()" />
 						<img src="imgs/arrow-right.png" width="20" class="float-right" role="button"
-							onclick="custom3NavigationRight()" />
+							onclick="custom3NavigationRight()" style="margin-right: -36px;" />
 					</div>
 					<div class="col-md-12">
-						<div class="featured-carousel3 owl-carousel">
+						<div class="featured-carousel3 owl-carousel d-lg-block d-md-none">
 							<div class="item">
 								<div class="work">
 									<div class="img d-flex align-items-center justify-content-center rounded"
@@ -297,6 +348,27 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="d-md-block d-lg-none">
+							<div class="row">
+								<div class="col text-center">
+									<img src="imgs/mobile-slider-img-4.png" class="img-fluid w-100 " />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 text-left text-white p-5"
+									style="font-size: 30px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+									gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+								</div>
+								<div class="px-5 col-12 my-4">
+									<button class="w-100 p-4 py-5 font-weight-bold h5"
+										style="color:#17365c;background: #fec700;border:none;font-size: 40px !important;">WEITERE
+										REZEPTE</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -304,19 +376,25 @@
 
 		<div class="row">
 			<div class="col text-center d-md-none d-lg-block">
-				<img src="imgs/img-9.png" class="img-fluid w-75 " />
+				<img src="imgs/img-9.png" class="img-fluid w-100 " />
 			</div>
 			<div class="col-md-12 col-lg-6 text-center">
-				<img src="imgs/img-3.png" class="img-fluid w-75" />
+				<img src="imgs/img-3.png" class="img-fluid w-100 d-lg-block d-md-none" />
+				<img src="imgs/mobile-img-3.png" class="img-fluid w-100 d-lg-none d-md-inline-flex" />
 			</div>
 			<div class="col text-center d-md-none d-lg-block">
-				<img src="imgs/img-4.png" class="img-fluid w-75 " />
+				<img src="imgs/img-4.png" class="img-fluid w-100 " />
 			</div>
 		</div>
-
+		<div class="text-left text-white d-md-block d-lg-none px-4"
+			style="font-size: 30px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+			dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+			vel facilisis.
+		</div>
 		<div class="row position-relative">
-			<div class="offset-lg-3 offset-md-1 col-md-10 col-sm-12 col-lg-6">
-				<div class="row m-4">
+			<div class="offset-lg-3 col-md-12 col-lg-6">
+				<div class="row my-4">
 					<div class="col-md-12">
 						<div class="featured-carousel1 owl-carousel">
 							<div class="item">
@@ -324,16 +402,21 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider1-img-1.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
-										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD
-											ENOUGH</h7>
-										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum
-											dolor
-											sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-											incididunt ut
-											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-											gravida.
+										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
+										</h7>
+										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 									</div>
 								</div>
@@ -343,16 +426,21 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider1-img-2.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
-										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD
-											ENOUGH</h7>
-										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum
-											dolor
-											sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-											incididunt ut
-											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-											gravida.
+										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
+										</h7>
+										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 									</div>
 								</div>
@@ -362,16 +450,21 @@
 									<div class="img d-flex align-items-center justify-content-center rounded"
 										style="background-image: url(imgs/slider1-img-3.png);">
 									</div>
-									<div class="text pt-3 w-100 text-center">
+									<div class="text pt-3 w-100 text-center d-lg-block d-md-none">
 										<h4 class="text-white">THE ART OF GIN</h4>
-										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD
-											ENOUGH</h7>
-										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum
-											dolor
-											sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-											incididunt ut
-											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-											gravida.
+										<h7 class="text-white" style="font-size: 9px;font-weight:300">TS GOOD ENOUGH
+										</h7>
+										<p class="text-white text-justify" style="font-size: 12px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+									</div>
+
+									<div class="w-100 d-lg-none d-md-block mt-3">
+										<img src="imgs/mobile-gin-topic-img.png" class="img-fluid w-100" />
+										<p class="text-white text-left p-3" style="font-size: 30px;">Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 											Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 									</div>
 								</div>
@@ -383,7 +476,7 @@
 		</div>
 
 		<div class="row position-relative">
-			<div class="offset-lg-3 offset-md-1 col-md-10 col-sm-12 col-lg-6">
+			<div class="offset-lg-3 col-md-12 col-lg-6">
 
 				<div class="row m-4 mb-n5">
 					<div class="col-md-12 text-center">
@@ -416,16 +509,16 @@
 							</div>
 						</div>
 						<div class="row d-md-flex d-lg-none mb-n5">
-							<div class="col text-center">
-								<img src="imgs/img-10.png" class="img-fluid w-100" />
+							<div class="col-5 text-center">
+								<img src="imgs/mobile-img-10.png" class="img-fluid w-100" />
 							</div>
-							<div class="col text-center">
-								<img src="imgs/img-12.png" class="img-fluid w-100" />
+							<div class="col-7 text-center">
+								<img src="imgs/mobile-img-12.png" class="img-fluid w-100" />
 							</div>
 						</div>
-						<div class="row d-md-block d-lg-none mt-n5">
-							<div class="col text-center mt-n5">
-								<img src="imgs/img-11.png" class="img-fluid w-75 mt-n5" />
+						<div class="row d-md-block d-lg-none mt-5">
+							<div class="col text-center">
+								<img src="imgs/mobile-img-11.png" class="img-fluid w-75" />
 							</div>
 						</div>
 					</div>
@@ -437,7 +530,7 @@
 			<div class="col text-center">
 				<img src="imgs/img-7.png" class="img-fluid w-75 d-md-none d-lg-block position-absolute fixed-bottom" />
 			</div>
-			<div class="col-md-10 col-lg-6 text-center">
+			<div class="col-md-12 col-lg-6 text-center">
 				<div class="col position-absolute ml-n3 d-lg-block d-md-none" style="margin-top: 140px;">
 					<img src="imgs/arrow-left.png" width="20" class="float-left" role="button"
 						onclick="custom4NavigationLeft()" />
@@ -540,27 +633,32 @@
 						</div>
 					</div>
 				</div>
-				<div class="row text-center d-none d-sm-block position-absolute w-100 impressium-text"
+
+				<div class="row text-center d-lg-block d-md-none position-absolute w-100 impressium-text"
 					style="color: #fec703;font-weight: 500;font-family:'customFont1';font-size: 12px;z-index: 4;">
 					IMPRESSUM - KONTAKT - GROSSHANDEL
 				</div>
-				<div class="row">
-					<div class="col-4">
-						<img src="imgs/img-5.png" class="img-fluid w-100 mt-5" />
+
+				<div class="row footer">
+					<div class="col-lg-4 col-md-3">
+						<img src="imgs/img-5.png" class="img-fluid w-100 mt-5 d-md-none d-lg-block" />
+						<img src="imgs/footer-left.png" class="img-fluid w-100 mt-5 d-md-block d-lg-none"
+							style="height: 93.5%;" />
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-6">
 						<div class="row position-absolute fixed-bottom text-center">
-							<div class="col">
-								<img src="imgs/logo-icon.png" class="img-fluid w-100 d-block d-sm-none"
+							<div class="col text-center">
+								<img src="imgs/logo-icon.png" class="img-fluid w-50 d-md-inline-flex d-lg-none"
 									style="margin-top:-20px" />
-								<p class="text-white text-center w-100"
+								<p class="text-white text-center w-100 footer-country"
 									style="margin-top:20px;font-family: 'customFont1';font-size: 12px;">GERMANY</p>
 								<img src="imgs/helm-icon.png" class="img-fluid w-100" style="margin-top:-15px" />
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
-						<img src="imgs/img-6.png" class="img-fluid w-100 mt-5" />
+					<div class="col-lg-4 col-md-3">
+						<img src="imgs/img-6.png" class="img-fluid w-100 mt-5 d-md-none d-lg-block" />
+						<img src="imgs/footer-right.png" class="img-fluid w-100 mt-5 d-md-block d-lg-none" />
 					</div>
 				</div>
 			</div>

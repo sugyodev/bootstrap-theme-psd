@@ -36,7 +36,10 @@ $(function() {
     window.aa = e.target
     if(e.target.attributes.src.value == './imgs/bars.png') {
       e.target.attributes.src.value = './imgs/cross.png'
+      document.getElementById('land-bg').style.display = "none"
     } else {
       e.target.attributes.src.value = './imgs/bars.png'
+      document.getElementById('land-bg').style.display = "block"
+
     }
   }

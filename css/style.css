@@ -11960,17 +11960,7 @@ h5,
 }
 
 #top_navbars {
-  margin-top: -63px;
-}
-
-@media (max-width: 1200px) {
-  #top_navbars {
-    margin-top: -43px;
-  }
-
-  #top_navbars .nav-link {
-    font-size: 12px;
-  }
+  margin-top: -52px;
 }
 
 
@@ -11978,16 +11968,6 @@ h5,
   width: 50%;
 }
 
-@media (max-width: 990px) {
-  #top_navbars {
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .enjoy-text {
-    width: 100%;
-  }
-}
 
 #top_navbars .nav-link {
   color: #fec700 !important;
@@ -12012,6 +11992,16 @@ h5,
   color: #fec700;
 }
 
+.art-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dieck p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dieck h5 {
+  font-weight: 600;
+}
 
 @media (min-width: 990px) {
   .language_bar {
@@ -12022,5 +12012,116 @@ h5,
 
   .header-bg-img {
     display: none;
+  }
+
+  /* .logo {
+    background-image: url('../imgs/mobile-logo.png');
+  } */
+
+}
+
+@media (max-width: 990px) {
+  #top_navbars {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .enjoy-text {
+    width: 100%;
+  }
+
+  .navbar, .col-logo{
+    /* padding-left: 0px !important;
+    padding-right: 0px !important; */
+  }
+  .navbar .container {
+    max-width: inherit;
+  }
+
+  .navbar-toggler {
+    z-index: 5;
+    margin-right: 40px;
+  }
+
+  .container-fluid , .row, .col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .navbar-toggler img {
+    width: 50px!important;
+  }
+
+  .navbar-nav {
+    padding-top: 220px;
+    line-height: 50px;
+    background: #17365c;
+    height: 1450px;
+  }
+  .navbar {
+    margin-right: -14px !important;
+  }
+  .navbar-nav li a, button {
+    font-size: 65px!important;
+    line-height: 200px;
+  }
+  .navbar-nav li a, button {
+    padding: 20px 40px !important;
+  }
+  .language_bar {
+    background: #17365c;
+    height: 250px;
+    margin-top: -2px;
+  }
+  .language_bar div div div {
+    padding-top: 120px;
+    font-size: 50px;
+  }
+
+  .art-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .dieck h5 {
+    font-size: 36px;
+  }
+  .dieck p {
+    font-size: 30px;
+  }
+
+  .featured-carousel div div .img {
+    height: 800px;
+  }
+
+  .featured-carousel1 div div .img {
+    height: 800px;
+  }
+
+  .featured-carousel4 div div div h4 {
+    font-size: 40px;
+  }
+  .featured-carousel4 div div div p {
+    font-size: 30px !important;
+  }
+
+  .footer-country {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+  }
+
+  .footer .col-md-3 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #top_navbars {
+    margin-top: -27px;
+  }
+
+  #top_navbars .nav-link {
+    font-size: 12px;
   }
 }
